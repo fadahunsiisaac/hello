@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+.head-1{
+    background-color: black;
+    height: 100px;
+    position: relative;
+    animation: me  3s infinite alternate ease-in-out;
+    /* animation-delay: 1s;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: infinite; */
+    width: 100px;
+}
+@keyframes me{
+    0%{left: 0;top: 0;}
+    25%{ left: 0; top: 500px; background-color: red;}
+    50%{ left: 500px; top: 0px; background-color: blue;}
+    75%{ left: 0px; top: 200px; background-color: purple;}
+    100%{ left: 200px; top: 0px; background-color: yellow;}
+}
+span{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 20 red;
+    animation:bounce 0.4s ease infinite alternate;
+    display: inline-block;
+    font-size: 5rem;
+    text-shadow: 0 1px 0 red, 0 2px 0 blue, 0 3px 0 blue, 0 4px 0 blue, 0 5px 0 blue, 6px 0 blue, transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 10px rgba(0, 0, 0,0.5) transparent,;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.2s;
+    color: blue;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.3s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(5){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(6){
+    animation-delay: 0.6s;
+}
+@keyframes bounce{
+    100%{top: -20px; text-shadow: 0 1px 0, 0 2px 0, 0;}
+}
